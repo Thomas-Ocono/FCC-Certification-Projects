@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+
+  <body>
+    <h1 id="title">Simple Survey</h1>
+    <p id="description">
+      Enter all your valuable information into the form below
+    </p>
+
+    <form id="survey-form">
+      <label id="name-label"
+        >Enter Your Name:
+        <input id="name" type="text" required placeholder="John Computer" />
+      </label>
+      <label id="email-label"
+        >Enter Your E-mail:
+        <input
+          id="email"
+          type="email"
+          required
+          placeholder="John1337@gmail.com"
+        />
+      </label>
+      <label id="number-label"
+        >Enter Your Age (Optional):
+        <input id="number" type="number" placeholder="47" min="1" max="100" />
+      </label>
+
+      <label id="dropdown-label"
+        >Are you more of a cat person or a dog person?
+        <select id="dropdown">
+          <option>Cats</option>
+          <option>Dogs</option>
+        </select>
+      </label>
+
+      <fieldset class="form-group">
+        <legend>What is your favorite kind of dog?</legend>
+        <input id="weiner" type="radio" value="weiner" name="dogs" />
+        <label for="weiner">Weiner Dog</label><br />
+        <input id="german" type="radio" value="german" name="dogs" />
+        <label for="german">German Shepard</label><br />
+        <input id="golden" type="radio" value="golden" name="dogs" />
+        <label for="golden">Golden Retriever</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Select the places you would like to visit</legend>
+        <input
+          id="australia"
+          type="checkbox"
+          name="places"
+          value="australia"
+        />Australia
+        <input id="sweden" type="checkbox" name="places" value="sweden" />Sweden
+        <input id="mexico" type="checkbox" name="places" value="mexico" />Mexico
+        <input id="parents" type="checkbox" name="places" value="parents" />My
+        Parents
+      </fieldset>
+      <label id="textarea-label">Anything else to say?</label>
+      <textarea id="textarea"></textarea>
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
