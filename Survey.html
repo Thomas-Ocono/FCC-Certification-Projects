@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SurveyForm</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
   <body>
-    <h1 id="title">Simple Survey</h1>
-    <p id="description">
-      Enter all your valuable information into the form below
-    </p>
-
+    <div class="title-section">
+      <h1 id="title">Simple Survey</h1>
+      <p id="description">
+        Enter all your valuable information into the form below
+      </p>
+    </div>
+    <div class="input-section">
+    <div class="first-section">
     <form id="survey-form">
       <label id="name-label"
         >Enter Your Name:
         <input id="name" type="text" required placeholder="John Computer" />
       </label>
+      <br />
       <label id="email-label"
         >Enter Your E-mail:
         <input
@@ -22,11 +31,13 @@
           placeholder="John1337@gmail.com"
         />
       </label>
+      <br />
       <label id="number-label"
         >Enter Your Age (Optional):
         <input id="number" type="number" placeholder="47" min="1" max="100" />
       </label>
-
+    </div>
+      <br />
       <label id="dropdown-label"
         >Are you more of a cat person or a dog person?
         <select id="dropdown">
@@ -34,7 +45,6 @@
           <option>Dogs</option>
         </select>
       </label>
-
       <fieldset class="form-group">
         <legend>What is your favorite kind of dog?</legend>
         <input id="weiner" type="radio" value="weiner" name="dogs" />
@@ -45,7 +55,7 @@
         <label for="golden">Golden Retriever</label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="places">
         <legend>Select the places you would like to visit</legend>
         <input
           id="australia"
@@ -59,8 +69,11 @@
         Parents
       </fieldset>
       <label id="textarea-label">Anything else to say?</label>
+      <br />
       <textarea id="textarea"></textarea>
+      <br />
       <button id="submit">Submit</button>
     </form>
+  </div>
   </body>
 </html>
