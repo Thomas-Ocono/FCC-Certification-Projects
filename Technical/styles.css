@@ -1,8 +1,22 @@
-img {
-  display: block;
+@media screen and (min-width: 480px) {
+  #navbar {
+    width: 250px;
+    float: left;
+  }
 }
-#image {
-  max-width: 100%;
-  height: auto;
-  margin: auto;
+header {
+  font-size: 2rem;
+}
+#navbar {
+  display: block;
+  position: fixed;
+  min-width: 250px;
+  height: 100%;
+  border-right: 5px solid black;
+}
+#main-doc {
+  position: absolute;
+  display: block;
+  margin-left: 100px;
+  padding: 150px;
 }
