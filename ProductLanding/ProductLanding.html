@@ -3,29 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Landing Page</title>
+    <title>ProductLanding</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header id="header">
       <img
         id="header-img"
-        src="https://imgs.search.brave.com/TxE0v9oArAjk901xWoxe7GLMBhQnwykSdC7FlKxOZ4Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzExLzA2Lzk3Lzcx/LzM2MF9GXzExMDY5/NzcxMjZfeFhrZ0M5/eG41ejVEaWU2ejZ5/UDdMVTFLVUU1NVBj/bmcuanBn"
-      />Bestus Violins
+        src="https://imgs.search.brave.com/CP7h-vkpjGerFNqW0C5VQs-ASu3MPEF_VL2TasrRc5w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA4LzI1Lzk0LzQ3/LzM2MF9GXzgyNTk0/NDc2OF9xQnNQQTI3/VWZjdVBFSGhYQ0Q1/SmllR3IzZ2Fpd2VQ/Ry5qcGc"
+      />
       <nav id="nav-bar">
-        <a class="nav-link">Features</a>
-        <a class="nav-link">Demo</a>
-        <a class="nav-link">Prices</a>
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#demo">Demo</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
       </nav>
     </header>
     <form id="form" action="https://www.freecodecamp.com/email-submit">
-      <input id="email" type="email" placeholder="E-mail" name="email" />
-      <input id="submit" type="submit" value="Order" />
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter your E-mail"
+        name="email"
+      />
+      <input type="submit" id="submit" />
     </form>
-    <iframe
-      id="video"
-      height="315"
-      src="https://www.youtube.com/watch?v=GqRammbyk4M&ab_channel=RayChen"
-    ></iframe>
+    <div id="features">
+      <h2>Well-crafted</h2>
+      <p>
+        Finely crafted by specialized artisans for your musical enjoyment. Only
+        the best of the best make our premium and wildly expensive violins.
+      </p>
+      <h2>Quick Shipping</h2>
+      <p>
+        Guaranteed to arrive in 2 days or less, that's a guarantee! If not we
+        kill the delivery driver and replace them with a better one and you pay
+        for nothing.
+      </p>
+      <h2>Guaranteed Quality</h2>
+      <p>
+        If there are any mistakes or abnormalities in your new violin we replace
+        it for free! (Only if you buy an entirely new violin)
+      </p>
+    </div>
+    <div id="demo">
+      <h1>You can use them to play music for horses!</h1>
+      <iframe
+        id="video"
+        width="420"
+        height="315"
+        src="https://youtu.be/GqRammbyk4M"
+      ></iframe>
+    </div>
+    <div id="pricing"></div>
   </body>
 </html>

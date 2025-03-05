@@ -1,0 +1,36 @@
+body {
+  background-color: beige;
+}
+@media (display-mode: fullscreen) {
+  body {
+    background-color: red;
+  }
+}
+#nav-bar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  background-color: gray;
+  font-size: 3rem;
+  width: 100%;
+  flex-direction: row;
+}
+#nav-bar a {
+  text-align: right;
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+}
+#features {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+#features h2 {
+  font-size: 3rem;
+}
+#features p {
+  font-size: 1.5rem;
+}
+#demo {
+  text-align: center;
+}
